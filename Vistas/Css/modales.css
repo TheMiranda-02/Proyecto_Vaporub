@@ -1,0 +1,43 @@
+.modal-vertical {
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-header {
+  background-color: #2f5d3a;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 20px;
+}
+
+.modal-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.modal-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clima-item h6 {
+  font-size: 16px;
+  color: #247e19;
+  margin-bottom: 8px;
+}
+
+.clima-item p {
+  font-size: 14px;
+  color: #1A2432;
+  line-height: 1.6;
+}

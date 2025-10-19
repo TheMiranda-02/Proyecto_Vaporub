@@ -10,10 +10,12 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/modales.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
+
 
     <!-- Seccción para menú estatica -->
     <header class="header">
@@ -210,11 +212,11 @@
 
                 <!-- Tarjeta con imagen -->
                 <div class="div2">
-                    <div class="card-modal" data-bs-toggle="modal" data-bs-target="#modalSol">
+                    <div class="card-modal"  data-bs-target="#modalSol">
                         <img src="../Img/Siembre/Sol.png">
                     </div>
 
-                    <div class="card-modal" data-bs-toggle="modal" data-bs-target="#modalAgua">
+                    <div class="card-modal" data-bs-target="#modalAgua">
                         <img src="../Img/Siembre/Riego.png">
                     </div>
 
@@ -222,8 +224,8 @@
                         <img src="../Img/Siembre/Tierra.png">
                     </div>
 
-                    <div class="card-modal" data-bs-toggle="modal" data-bs-target="#modalNutrientes">
-                        <img src="../Img/Siembre/Nutrientes.png">
+                    <div class="card-modal" data-bs-toggle="modal" data-bs-target="#modalEspacio">
+                        <img src="../Img/Siembre/Espacio.png">
                     </div>
                 </div>
             </div>
@@ -234,33 +236,29 @@
             </div>
         </div>
     </section>
+    <br><br>
 
-    <!-- Modal de Bootstrap -->
-    <div class="modal fade" id="modalCuidados" tabindex="-1" aria-labelledby="modalCuidadosLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalCuidadosLabel">Cuidados de la Planta</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>☀️ Luz solar directa</li>
-                        <li>💧 Riego cada 3 días</li>
-                        <li>🌱 Tierra rica en nutrientes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Sección para linea del tiempo -->
     <!-- Sección para galeria -->
     <!-- Footer -->
+
+    <!-- Llamar modales -->
+    <div id="modal-sol"></div> <!--Modal Sol-->
+    <div id="modal-agua"></div> <!--Modal Agua-->
+    <div id="modal-tierra"></div> <!--Modal tierra-->
+    <div id="modal-espacio"></div> <!--Modal Espacio-->
 
     <!-- JS -->
     <script src="../JS/Banner.js"></script>
     <script src="../JS/beneficios_targ.js"></script>
     <script src="../JS/Carrusel3D.js"></script>
+
+    <!-- JS modales -->
+    <script src="../JS/modales.js"></script>
+
+    <!-- Js Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 
 </html>
