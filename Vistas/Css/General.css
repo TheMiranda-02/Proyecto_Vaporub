@@ -69,6 +69,7 @@ html {
     margin: 0;
 }
 
+
 .nav-items {
     display: flex;
     gap: 20px;
@@ -107,6 +108,19 @@ html {
     position: absolute;
     left: 0;
     bottom: -2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar .branding a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
